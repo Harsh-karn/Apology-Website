@@ -4,7 +4,6 @@ import PhotosSection from '@/components/PhotosSection';
 import PromiseSection from '@/components/PromiseSection';
 import FinalSection from '@/components/FinalSection';
 import Footer from '@/components/Footer';
-import AudioPlayer from '@/components/AudioPlayer';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -19,7 +18,6 @@ const Home = () => {
       </Helmet>
       
       <main className="bg-primary-light font-poppins text-dark overflow-x-hidden">
-        <AudioPlayer />
         <HeroSection />
         <LetterSection />
         <PhotosSection />
