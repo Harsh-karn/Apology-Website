@@ -49,8 +49,11 @@ const FinalSection = () => {
             <Button 
               variant="outline" 
               className="bg-white text-secondary border-2 border-secondary px-8 py-6 rounded-full font-medium hover:bg-secondary hover:text-white transition-all duration-300 hover:shadow-lg text-lg"
+              asChild
             >
-              <MessageSquare className="mr-2 h-5 w-5" /> Text Me
+              <a href="sms:+919523330382">
+                <MessageSquare className="mr-2 h-5 w-5" /> Text Me
+              </a>
             </Button>
           </motion.div>
         </div>

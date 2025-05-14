@@ -8,7 +8,7 @@ const AudioPlayer = () => {
 
   useEffect(() => {
     // Create audio element
-    audioRef.current = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+    audioRef.current = new Audio("https://audio.jukehost.co.uk/BdtLyJCNzYo3zP8vKE8fK3V05FqcSo6g");
     audioRef.current.loop = true;
     
     // Clean up
@@ -46,7 +46,12 @@ const AudioPlayer = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+      {isPlaying && (
+        <div className="mb-2 bg-white/80 text-secondary p-2 rounded-lg text-xs shadow-md">
+          Now Playing: "I Love You So" by The Walters
+        </div>
+      )}
       <Button
         onClick={toggleMusic}
         className="rounded-full p-3 w-12 h-12 bg-white hover:bg-primary transition-all duration-300 shadow-lg flex items-center justify-center group"
