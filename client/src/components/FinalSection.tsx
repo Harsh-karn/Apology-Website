@@ -39,8 +39,11 @@ const FinalSection = () => {
             <Button 
               variant="default" 
               className="bg-secondary hover:bg-accent text-white px-8 py-6 rounded-full font-medium transition-all duration-300 hover:shadow-lg text-lg"
+              asChild
             >
-              <Phone className="mr-2 h-5 w-5" /> Call Me
+              <a href="tel:+919523330382">
+                <Phone className="mr-2 h-5 w-5" /> Call Me
+              </a>
             </Button>
             
             <Button 

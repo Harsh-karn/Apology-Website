@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import snapchat1 from '@assets/Snapchat-67301335.jpg';
 import snapchat2 from '@assets/Snapchat-75264617.jpg';
+import snapchat3 from '@assets/Snapchat-1895858472.jpg';
+import snapchat4 from '@assets/IMG-20250309-WA0008.jpg';
 
 const PhotosSection = () => {
   const { ref, inView } = useScrollAnimation();
@@ -66,6 +68,52 @@ const PhotosSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-4 text-white">
                   <p className="font-dancing text-xl">The smile I adore</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          
+          {/* Third Photo */}
+          <motion.div 
+            className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-500"
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            whileHover={{ y: -5 }}
+          >
+            <div className="relative group">
+              <motion.img 
+                src={snapchat3} 
+                alt="Cool with sunglasses" 
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-4 text-white">
+                  <p className="font-dancing text-xl">Your cool confidence</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          
+          {/* Fourth Photo */}
+          <motion.div 
+            className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-500"
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            whileHover={{ y: -5 }}
+          >
+            <div className="relative group">
+              <motion.img 
+                src={snapchat4} 
+                alt="Us together" 
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                whileHover={{ scale: 1.05 }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-4 text-white">
+                  <p className="font-dancing text-xl">Together, always</p>
                 </div>
               </div>
             </div>
